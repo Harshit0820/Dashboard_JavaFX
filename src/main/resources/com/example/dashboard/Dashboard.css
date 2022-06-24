@@ -1,0 +1,43 @@
+.cursor_hand{
+    -fx-cursor:hand;
+}
+.view_all{
+     -fx-background-color:#dbe0b4;
+}
+.button_menu:hover{
+    -fx-background-color:#dbe0b4;
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 2px;
+}
+.button_menu:pressed{
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 4px;
+}
+.upper_button:hover{
+    -fx-background-color:#dbe0b4;
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 2px;
+}
+.upper_button:pressed{
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 4px;
+}
+.authors_profiles{
+    -fx-background-color:#dbe0b4;
+}
+.menu_bars:hover{
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 4px;
+}
+.menu_bars:pressed{
+    -fx-border-color:#dbe0b4;
+    -fx-border-width:0px 0px 0px 6px;
+}
+.new_art:hover{
+    -fx-border-color:#a9a9a9;
+    -fx-border-width:0px 0px 0px 4px;
+}
+.new_art:pressed{
+    -fx-border-color:#a9a9a9;
+    -fx-border-width:0px 0px 0px 6px;
+}

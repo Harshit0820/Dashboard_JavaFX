@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1230.0" style="-fx-background-color: #7ca76f;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="680.0" prefWidth="216.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="180.0" prefWidth="216.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="74.0" style="-fx-background-color: #9ebd73; -fx-background-radius: 15; -fx-border-radius: 15;" stylesheets="@Dashboard.css">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sdf.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="button_menu" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                  </Button>
+               </children></VBox>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="216.0" stylesheets="@Dashboard.css">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="71.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="205.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@Dashboard.css">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="84.0" text="Articles" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="205.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@Dashboard.css">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="84.0" text="Readers" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="269.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@Dashboard.css">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="79.0" text="Editors" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="269.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@Dashboard.css">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="106.0" text="Magazines" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="154.0" prefWidth="216.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="56.0" prefWidth="202.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #9ebd73;" stylesheets="@Dashboard.css" text="Create +" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="6.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="cursor_hand" />
+                        <String fx:value="button_menu" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+         </children></VBox>
+      <VBox layoutX="216.0" prefHeight="680.0" prefWidth="1015.0">
+         <children>
+            <VBox prefHeight="680.0" prefWidth="1015.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+               <children>
+                  <HBox prefHeight="80.0" prefWidth="1015.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="755.0">
+                           <children>
+                              <TextField prefHeight="34.0" prefWidth="340.0" promptText="Search" style="-fx-background-radius: 50;">
+                                 <effect>
+                                    <DropShadow blurType="ONE_PASS_BOX" height="2.0" radius="0.5" width="2.0" />
+                                 </effect></TextField>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding></HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="529.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="74.0" prefWidth="70.0" style="-fx-background-color: #dbe0b4; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@Dashboard.css">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon_bell.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                                 <styleClass>
+                                    <String fx:value="cursor_hand" />
+                                    <String fx:value="upper_button" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="152.0" layoutY="10.0" prefHeight="74.0" prefWidth="70.0" style="-fx-background-color: #dbe0b4; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@Dashboard.css">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon_message.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                                 <styleClass>
+                                    <String fx:value="cursor_hand" />
+                                    <String fx:value="upper_button" />
+                                 </styleClass>
+                              </HBox>
+                              <Label prefHeight="28.0" prefWidth="68.0" text="NAME">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" layoutX="214.0" layoutY="20.0" prefHeight="56.0" prefWidth="68.0" style="-fx-background-color: #dbe0b4; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@Dashboard.css">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                                 <styleClass>
+                                    <String fx:value="cursor_hand" />
+                                    <String fx:value="upper_button" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@men2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="15.0" top="10.0" />
+                           </padding></HBox>
+                     </children></HBox>
+                  <HBox prefHeight="600.0" prefWidth="1015.0">
+                     <children>
+                        <VBox prefHeight="600.0" prefWidth="730.0">
+                           <children>
+                              <HBox prefHeight="185.0" prefWidth="720.0" style="-fx-background-color: #eaa736; -fx-background-radius: 25;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <HBox prefHeight="187.0" prefWidth="483.0">
+                                       <children>
+                                          <VBox prefHeight="187.0" prefWidth="494.0">
+                                             <children>
+                                                <Label prefHeight="44.0" prefWidth="362.0" text="Hello! Ready With New Article" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="30.0" layoutY="30.0" prefHeight="51.0" prefWidth="362.0" text="Let's Create It..." textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="314.0" style="-fx-background-color: black; -fx-background-radius: 30; -fx-border-radius: 30;" stylesheets="@Dashboard.css" text="New Article +" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <effect>
+                                                      <DropShadow height="4.0" radius="1.5" width="4.0" />
+                                                   </effect>
+                                                   <styleClass>
+                                                      <String fx:value="cursor_hand" />
+                                                      <String fx:value="new_art" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children></HBox>
+                                    <ImageView fitHeight="192.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@vector.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></HBox>
+                              <HBox prefHeight="415.0" prefWidth="720.0">
+                                 <children>
+                                    <VBox prefHeight="415.0" prefWidth="476.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <HBox prefHeight="79.0" prefWidth="420.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 15;">
+                                                   <effect>
+                                                      <DropShadow height="7.0" radius="3.0" width="7.0">
+                                                         <color>
+                                                            <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                                         </color>
+                                                      </DropShadow>
+                                                   </effect>
+                                                   <children>
+                                                      <Label text="Articles">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="142">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 15;">
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" />
+                                                   </HBox.margin>
+                                                   <effect>
+                                                      <DropShadow height="7.0" radius="3.0" width="7.0">
+                                                         <color>
+                                                            <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                                         </color>
+                                                      </DropShadow>
+                                                   </effect>
+                                                   <children>
+                                                      <Label text="Likes">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="128K">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" layoutX="92.0" layoutY="10.0" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 15;">
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" />
+                                                   </HBox.margin>
+                                                   <effect>
+                                                      <DropShadow height="7.0" radius="3.0" width="7.0">
+                                                         <color>
+                                                            <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                                         </color>
+                                                      </DropShadow>
+                                                   </effect>
+                                                   <children>
+                                                      <Label text="Comments">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="2K">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" layoutX="175.0" layoutY="10.0" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 15;">
+                                                   <HBox.margin>
+                                                      <Insets left="30.0" />
+                                                   </HBox.margin>
+                                                   <effect>
+                                                      <DropShadow height="7.0" radius="3.0" width="7.0">
+                                                         <color>
+                                                            <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                                         </color>
+                                                      </DropShadow>
+                                                   </effect>
+                                                   <children>
+                                                      <Label text="Readers">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="250K">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <VBox prefHeight="320.0" prefWidth="450.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 25;">
+                                             <VBox.margin>
+                                                <Insets right="15.0" />
+                                             </VBox.margin>
+                                             <effect>
+                                                <DropShadow height="7.0" radius="3.0" width="7.0">
+                                                   <color>
+                                                      <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                                   </color>
+                                                </DropShadow>
+                                             </effect>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="286.0">
+                                                   <children>
+                                                      <Label text="Best Authors">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="265.0">
+                                                         <children>
+                                                            <Button mnemonicParsing="false" style="-fx-background-radius: 35;" stylesheets="@Dashboard.css" text="View All">
+                                                               <font>
+                                                                  <Font name="Calibri" size="14.0" />
+                                                               </font>
+                                                               <effect>
+                                                                  <DropShadow height="2.0" radius="0.5" width="2.0" />
+                                                               </effect>
+                                                               <styleClass>
+                                                                  <String fx:value="view_all" />
+                                                                  <String fx:value="cursor_hand" />
+                                                               </styleClass>
+                                                            </Button>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="15.0" left="15.0" right="5.0" top="15.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="434.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="77.0" style="-fx-background-radius: 15;" stylesheets="@Dashboard.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@men1.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <styleClass>
+                                                            <String fx:value="authors_profiles" />
+                                                            <String fx:value="cursor_hand" />
+                                                         </styleClass>
+                                                         <effect>
+                                                            <DropShadow height="4.0" radius="1.5" width="4.0" />
+                                                         </effect></Button>
+                                                      <Label prefHeight="24.0" prefWidth="66.0" text="James">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="266.0">
+                                                         <children>
+                                                            <Label text="Fashion">
+                                                               <font>
+                                                                  <Font name="Calibri" size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Separator prefWidth="180.0" />
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="71.0" prefHeight="87.0" prefWidth="434.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="77.0" style="-fx-background-radius: 15;" stylesheets="@Dashboard.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@men2.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <styleClass>
+                                                            <String fx:value="authors_profiles" />
+                                                            <String fx:value="cursor_hand" />
+                                                         </styleClass>
+                                                         <effect>
+                                                            <DropShadow height="4.0" radius="1.5" width="4.0" />
+                                                         </effect>
+                                                      </Button>
+                                                      <Label prefHeight="24.0" prefWidth="72.0" text="Robert">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="266.0">
+                                                         <children>
+                                                            <Label text="Technology">
+                                                               <font>
+                                                                  <Font name="Calibri" size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Separator layoutX="10.0" layoutY="240.0" prefWidth="180.0" />
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="158.0" prefHeight="87.0" prefWidth="434.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="77.0" style="-fx-background-radius: 15;" stylesheets="@Dashboard.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@female.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <styleClass>
+                                                            <String fx:value="authors_profiles" />
+                                                            <String fx:value="cursor_hand" />
+                                                         </styleClass>
+                                                         <effect>
+                                                            <DropShadow height="4.0" radius="1.5" width="4.0" />
+                                                         </effect>
+                                                      </Button>
+                                                      <Label prefHeight="24.0" prefWidth="55.0" text="Lily">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="20.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="266.0">
+                                                         <children>
+                                                            <Label text="Food">
+                                                               <font>
+                                                                  <Font name="Calibri" size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children></VBox>
+                                    <VBox prefHeight="415.0" prefWidth="250.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 25;">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                       <effect>
+                                          <DropShadow height="7.0" radius="3.0" width="7.0">
+                                             <color>
+                                                <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="59.0" prefWidth="286.0">
+                                             <children>
+                                                <Label prefHeight="30.0" prefWidth="100.0" text="Updates">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="110.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" style="-fx-background-radius: 35;" stylesheets="@Dashboard.css" text="View All">
+                                                         <font>
+                                                            <Font name="Calibri" size="14.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow height="2.0" radius="0.5" width="2.0" />
+                                                         </effect>
+                                                         <styleClass>
+                                                            <String fx:value="view_all" />
+                                                            <String fx:value="cursor_hand" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Scott commented on your post">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="4.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <Separator prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="14.0" layoutY="71.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="James liked your post">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="113.0" prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="116.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Coron commented on your post">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="159.0" prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="162.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Coron started following you">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="204.0" prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="208.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Andy liked your post">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="250.0" prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="253.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Lisa started following you">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="296.0" prefWidth="200.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="299.0" />
+                                          <HBox alignment="CENTER" layoutX="10.0" layoutY="299.0">
+                                             <children>
+                                                <Circle fill="#a18888" radius="5.0" stroke="#ae6868" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <VBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="225.0">
+                                                   <children>
+                                                      <Label text="Daisy commented on your post">
+                                                         <font>
+                                                            <Font name="Calibri" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutX="10.0" layoutY="341.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="600.0" prefWidth="305.0" style="-fx-background-color: #f9f9f9; -fx-background-radius: 25;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow height="7.0" radius="3.0" width="7.0">
+                                 <color>
+                                    <Color red="0.7372549176216125" green="0.6196078658103943" blue="0.6196078658103943" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="59.0" prefWidth="286.0">
+                                 <children>
+                                    <Label text="New Articles">
+                                       <font>
+                                          <Font name="Cambria Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="110.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-radius: 35;" stylesheets="@Dashboard.css" text="View All">
+                                             <font>
+                                                <Font name="Calibri" size="14.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow height="2.0" radius="0.5" width="2.0" />
+                                             </effect>
+                                             <styleClass>
+                                                <String fx:value="view_all" />
+                                                <String fx:value="cursor_hand" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                              </HBox>
+                              <VBox prefHeight="254.0" prefWidth="286.0">
+                                 <children>
+                                    <VBox prefHeight="237.0" prefWidth="266.0">
+                                       <children>
+                                          <ImageView fitHeight="179.0" fitWidth="352.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@trees.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children></VBox>
+                                    <VBox alignment="CENTER" prefHeight="96.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
+                                       <children>
+                                          <Label text="Peace of Nature">
+                                             <font>
+                                                <Font name="Cambria Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children></VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding></VBox>
+                              <VBox layoutX="10.0" layoutY="91.0" prefHeight="254.0" prefWidth="286.0">
+                                 <children>
+                                    <VBox prefHeight="237.0" prefWidth="266.0">
+                                       <children>
+                                          <ImageView fitHeight="170.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@mountains.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children></VBox>
+                                    <VBox alignment="CENTER" prefHeight="118.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
+                                       <children>
+                                          <Label text="Peace of Nature">
+                                             <font>
+                                                <Font name="Cambria Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding></VBox>
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
